@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Welcome to this example chat!</h1>
+	<div class="row">
+		<div class="col-lg-3">
+			<h2>Active connections</h2>
+			<ul class="active-connections">
+				
+			</ul>
+		</div>
+		<div class="col-lg-9">
+			<h2>Chat history</h2>
+			<ul class="chat-history">
+				
+			</ul>
+		</div>
+	</div>
+{% endblock %}
+
+{% block javascripts %}
+	{% javascripts '@AppBundle/Resources/public/js/*' %}
+        <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock javascripts %}
